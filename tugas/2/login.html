@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewreport" content="width=device-width, initial-scale=1.0"/>
+        <title>Laman login</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .login{
+                border-collapse: collapse;
+                width: 60%;
+            }
+
+            h1{
+                text-align: center;
+            }
+            
+            body > form{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border: 1px solid black;
+                padding: 2rem;
+                gap: 1rem;
+            }
+
+            input[type="submit"]{
+                width: fit-content;
+                align-self: self-end;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form>
+            <h1>Login</h1>
+            <table class="login">
+            <tr>
+                <td style="font-weight: bold">Username:</td>
+                <td><input type="text" name="Username" size="12"/></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">Password:</td>
+                <td><input type="text" name="Password" size="12"/></td>
+            </tr>
+        </table>
+        <div class="check">
+            <span>Remember me</span>
+            <input type="checkbox"/>
+        </div>
+        <input type="submit" value="Login"/>
+        </form>
+    </body>
+</html>
